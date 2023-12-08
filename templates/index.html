@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maya</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="navigation">Visuliazer (Alpha)</button>
+                <button class="navigation">About</button>
+                <button class="navigation">Help</button>
+            </nav>
+        </header>
+        <div id="chat-container">
+            <div id="chat-window">
+                <p><strong>Maya:</strong> Hi, my name is Maya and i'm  the virtual sex therapist. You can ask any questions and I will try to answer them.</p>
+            </div>
+            <div id="user-input-container">
+                <textarea id="user-input" placeholder="Type your message..." onkeydown="handleInput(event)"></textarea>
+                <button id="send-button" onclick="sendMessage()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10 17l5-5-5-5v10z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>
