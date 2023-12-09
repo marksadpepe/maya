@@ -9,9 +9,21 @@
     <body>
         <header>
             <nav>
-                <button class="navigation">Visuliazer (Alpha)</button>
-                <button class="navigation">About</button>
-                <button class="navigation">Help</button>
+                <button class="navigation">
+                    <a href="{{ url_for('index') }}">Home</a>
+                </button>
+                <button class="navigation">
+                    <a href="{{ url_for('visualiser') }}">Visuliazer (Alpha)</a>
+                </button>
+                <button class="navigation">
+                    <a href="{{ url_for('about') }}">About</a>
+                </button>
+                <button class="navigation">
+                    <a href="{{ url_for('help') }}">Help</a>
+                </button>
+                <button class="navigation">
+                    <a href="https://t.me/maya_sex_therapist_bot" target="_blank">Telegram</a>
+                </button>
             </nav>
         </header>
         <div id="chat-container">
