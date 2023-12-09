@@ -26,4 +26,4 @@ def send_message():
     m_mes = mobj.send_message_and_get_content(message=user_input)
     return jsonify(message=m_mes)
 
-app.run(debug=True)
+app.run()
