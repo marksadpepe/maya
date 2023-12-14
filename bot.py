@@ -7,11 +7,11 @@ tg_bot = tl.TeleBot(os.getenv('BOT_TOKEN'))
 
 @tg_bot.message_handler(commands=['start'])
 def start(msg):
-    tg_bot.send_message(msg.chat.id, "Hi, my name is Maya and i'm  the virtual sex therapist. You can ask any questions and I will try to answer them")
+    tg_bot.send_message(msg.chat.id, "Привіт, мене звати Майя і я віртуальний секс-терапевт. Ви можете задати будь-які питання, і я постараюся на них відповісти.")
 
 @tg_bot.message_handler(commands=['help'])
 def help(msg):
-    tg_bot.send_message(msg.chat.id, "Welcome to Maya, your virtual sex therapist. We are here to provide a safe and confidential space for you to ask any questions related to your sexual health and well-being.\n\nMaya is designed to offer information and support in a non-judgmental manner. Feel free to type your questions or concerns in the chat, and Maya will do its best to provide helpful and informative responses.\n\nIf your issue persists or if you have a specific technical inquiry, please contact our technical support team via email at marksadpepe@gmail.com.")
+    tg_bot.send_message(msg.chat.id, "Ласкаво просимо до Майї, вашого віртуального секс-терапевта. Ми тут, щоб надати безпечний та конфіденційний простір для ваших питань, пов'язаних із сексуальним здоров'ям та благополуччям.\n\nМайя призначена для надання інформації та підтримки без осуду. Не соромтеся вводити свої питання чи стурбованості у чат, і Майя зробить все можливе, щоб надати корисні та інформативні відповіді.\n\nЯкщо ваші проблеми тривають чи у вас є конкретне технічне запитання, будь ласка, зверніться до нашої служби технічної підтримки за електронною адресою marksadpepe@gmail.com.")
 
 @tg_bot.message_handler(content_types='text')
 def reply(msg):
